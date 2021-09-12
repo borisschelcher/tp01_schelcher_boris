@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="fr">
+
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="style.css" rel="stylesheet" media="all" type="text/css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <title>Formulaire TP01</title>
+</head>
+
+<body id="bodyPage">
+    <form method="GET" onsubmit="return validateForm()">
+        <div id="header" class="header">
+            <div id="titre">
+                <h2>Création compte client</h2>
+            </div>
+        </div>
+        <div id="formulaire" class="formulaire">
+            <div class="row">
+                <div class="col" id="colLeft">
+                    <input id="inputNom" type="text" pattern="^[a-zA-Z]*$" class="form-control" placeholder="Nom" required>
+                    <input id="inputAdresse" type="text" class="form-control" placeholder="Adresse">
+                    <input id="inputVille" type="text" pattern="^[a-zA-Z]*$" class="form-control" placeholder="Ville" required>
+                    <input id="inputEmail" type="email" class="form-control" placeholder="Email" required>
+                    <input id="inputPWD" type="text" pattern="^[a-zA-Z0-9]*$" class="form-control" placeholder="Password" required>
+                </div>
+                <div class="col" id="colRight">
+                    <input id="inputPrenom" type="text" pattern="^[a-zA-Z]*$" class="form-control" placeholder="Prenom" required>
+                    <input id="inputCP" type="number" pattern="[0-9]{6}" class="form-control" placeholder="Code postal" required>
+                    <input id="inputNum" type="number" pattern="[0-9]{10}" class="form-control" placeholder="Numéro de Téléphone" required>
+                    <select id="inputCivilite" class="form-control" required>
+                        <option selected>Civilité</option>
+                        <option>Femme</option>
+                        <option>Homme</option>
+                        <option>Autre</option>
+                      </select>
+                    <input id="inputLogin" type="text" pattern="^[a-zA-Z]*$" class="form-control" placeholder="login" required>
+                </div>
+                <input id="submitButton" type="submit" class="form-control" placeholder="Envoyer">
+            </div>
+        </div>
+    </form>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+
+</html>
